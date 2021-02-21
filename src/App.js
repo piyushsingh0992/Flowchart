@@ -23,7 +23,7 @@ export default function App() {
         }
       }
     } else {
-      task = prompt("enter your task");
+      task = prompt("You are adding only one node now.Enter your task");
       if (task?.length <= 0) {
         alert("you cann't pass an empty task");
       } else if (task) {
