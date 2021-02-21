@@ -1,0 +1,79 @@
+.taskbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0px 80px;
+}
+
+.taskbox_task {
+  background-color: white;
+  height: 150px;
+  width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border-radius: 5px;
+  border: 1px solid black;
+
+  font-size: 50px;
+
+  box-shadow: 5px 10px 8px #888888;
+}
+
+.taskbox_delete_btn {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  padding: 10px 15px;
+  border-radius: 100%;
+
+  background-color: red;
+  opacity: 0;
+
+  border: 0px;
+
+  box-shadow: 5px 10px 8px #888888;
+
+  cursor: pointer;
+}
+
+.taskbox_delete_btn > img {
+  height: 20px;
+}
+
+.taskbox_delete_btn:hover {
+  transform: scale(1.1);
+}
+.taskbox_task:hover > .taskbox_delete_btn {
+  opacity: 1;
+}
+.taskbox_line_1 {
+  height: 60px;
+  width: 10px;
+  background-color: white;
+  box-shadow: 5px 10px 8px #888888;
+}
+
+.taskbox_add_btn {
+  font-size: 40px;
+  padding: 0.1px 15px;
+  border-radius: 100%;
+  background-color: #1db954;
+  color: white;
+  border: 0px;
+
+  box-shadow: 5px 10px 8px #888888;
+  cursor: pointer;
+}
+
+.taskbox_add_btn:hover {
+  transform: scale(1.1);
+}
+.taskbox_line_2 {
+  background-color: white;
+  height: 20px;
+  width: 10px;
+
+  box-shadow: 5px 10px 8px #888888;
+}
